@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 import Navbar from "../components/navbar";
 import SearchBar from "../components/search-panel";
 import BlogItem from "../components/BlogItem";
@@ -125,7 +126,6 @@ const Blog = () => {
       </div>
       <div className="max-w-6xl mx-auto px-4 mt-20 mb-16">
         <div className="bg-[#E7F3F5] rounded-3xl p-10 md:p-16 flex flex-col items-center text-center relative overflow-hidden">
-
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Deliciousness to your inbox
           </h2>
@@ -133,8 +133,6 @@ const Blog = () => {
           <p className="text-gray-500 max-w-xl mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim
           </p>
-
-          {/* INPUT */}
           <div className="flex w-full max-w-md bg-white rounded-full overflow-hidden shadow-sm">
             <input
               type="email"
@@ -157,6 +155,29 @@ const Blog = () => {
           />
         </div>
       </div>
+
+      <div className="pt-20" />
+
+      <div className="relative">
+        <img
+          src="/image/Foodieland..png"
+          alt="Foodieland"
+          className="h-6 w-auto position absolute bottom-16 z-10 left-4"
+        />
+
+        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col md:flex-row items-start md:items-center justify-end gap-6">
+          <p className="text-gray-500 text-sm">
+            Lorem ipsum dolor sit amet, consectetuipiscing elit,
+          </p>
+          <nav className="flex items-center gap-8 text-sm text-gray-700 font-medium ml-auto mr-6">
+            <a href="#" className="hover:text-black transition">Recipes</a>
+            <a href="#" className="hover:text-black transition">Blog</a>
+            <a href="#" className="hover:text-black transition">Contact</a>
+            <a href="#" className="hover:text-black transition">About us</a>
+          </nav>
+        </div>
+      </div>
+
     </div>
   );
 };

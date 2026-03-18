@@ -3,7 +3,11 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center py-6 px-8 border-b">
-      <h1 className="text-2xl font-bold">Foodieland</h1>
+      <img
+        src="/image/Foodieland..png"
+        alt="Foodieland"
+        className="h-6 w-auto object-contain"
+      />
 
       <div className="hidden md:flex gap-6 text-sm font-medium">
         <a href="#">Home</a>
